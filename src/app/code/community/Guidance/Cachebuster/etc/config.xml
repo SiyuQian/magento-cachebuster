@@ -27,7 +27,7 @@
 <config>
     <modules>
         <Guidance_Cachebuster>
-            <codeVersion>1.0.1</codeVersion>
+            <codeVersion>1.0.2</codeVersion>
         </Guidance_Cachebuster>
     </modules>
     <global>
@@ -45,7 +45,7 @@
     <default>
         <system>
             <guidance_cachebuster>
-                <is_enabled>0</is_enabled>
+                <is_enabled>1</is_enabled>
                 <url_keys>js,media,skin</url_keys>
                 <file_extensions>js,css,png,jpeg,jpg,gif</file_extensions>
             </guidance_cachebuster>
