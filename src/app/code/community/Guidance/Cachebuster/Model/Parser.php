@@ -101,15 +101,7 @@ class Guidance_Cachebuster_Model_Parser
             return $url;
         }
 
-        $timestamp = filemtime($path);
-
-        $final = array(
-            $pathinfo['filename'],
-            $timestamp,
-            $pathinfo['extension'],
-        );
-
-        return str_replace($pathinfo['basename'], implode('.', $final), $url);
+        return $url . (strpos($url, '?') !== false ? '&' : '?') . date("d-m-Y-H-i-s", filemtime($path));
     }
 
     /**

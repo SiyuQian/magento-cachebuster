@@ -64,7 +64,7 @@ class Guidance_Cachebuster_Helper_Data extends Mage_Core_Helper_Data
      */
     public function enabledFileExtensions()
     {
-        if (is_null($this->_fileExtensions)) {
+        if (empty($this->_fileExtensions)) {
             $config = Mage::getStoreConfig(self::XML_PATH_FILE_EXTENSIONS);
             $this->_fileExtensions = array_map('trim', explode(',', $config));
         }
